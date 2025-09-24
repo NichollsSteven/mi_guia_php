@@ -1,4 +1,4 @@
-✅  ## 1. Funciones básicas de cadena (rápidas y simples)
+✅  ##    1. Funciones básicas de cadena (rápidas y simples)
 #  php  strlen()– longitud de la cadena
 #  php  strpos(), – posición de subcadena strrpos()
 #  php  substr()– extraer parte de la cadena
@@ -8,9 +8,9 @@
 #  php  explode()/ – dividir y unir cadenas implode()
 #  php  str_repeat()– repetir una cadena
 #  php  str_contains(), , (PHP 8+)  str_starts_with()  str_ends_with()
-✅ Usar estas siempre que se pueda  : son rápidas, legibles y seguras . 
 
-🔤  ## 1. Longitud y posición
+
+🔤    ## 1. Longitud y posición
 #  php strlen($str): Devuelve la longitud de una cadena.
     echo strlen("Hola"); // 4
 
