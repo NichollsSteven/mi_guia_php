@@ -1,12 +1,20 @@
 ✅  # 1. Funciones básicas de cadena (rápidas y simples)
-### strlen()– longitud de la cadena
-### strpos(), – posición de subcadena strrpos()
-### substr()– extraer parte de la cadena
-### str_replace()/ – reemplazo simple str_ireplace()
-### trim(), , – eliminar espacios ltrim() rtrim()
-### strtolower(), , , – cambiar mayúsculas/minúsculas strtoupper() ucfirst() ucwords()
-### explode()/ – dividir y unir cadenas implode()
-### str_repeat()– repetir una cadena
+### strlen()
+    - longitud de la cadena
+### strpos()
+    – posición de subcadena strrpos()
+### substr()
+    – extraer parte de la cadena
+### str_replace()
+    – reemplazo simple str_ireplace()
+### trim()
+    – eliminar espacios ltrim() rtrim()
+### strtolower()
+    – cambiar mayúsculas/minúsculas strtoupper() ucfirst() ucwords()
+### explode()
+    – dividir y unir cadenas implode()
+### str_repeat()
+    - repetir una cadena
 ### str_contains(), , (PHP 8+)  str_starts_with()  str_ends_with()
 
 
