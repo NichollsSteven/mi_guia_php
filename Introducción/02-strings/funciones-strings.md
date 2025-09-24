@@ -17,8 +17,8 @@
     - repetir una cadena
 ### str_contains() - str_starts_with() - str_ends_with()
 
-## Explicacion a fondo de las Fúnciones
-# 🔤 1. Longitud y posición
+# Explicacion a fondo de las Fúnciones
+## 🔤 1. Longitud y posición
  ### strlen($str): Devuelve la longitud de una cadena.
     echo strlen("Hola"); // 4
 
@@ -28,7 +28,7 @@
 ###  strrpos($haystack, $needle): Encuentra la posición de la última aparición de una subcadena.
     echo strrpos("hola hola", "hola"); // 5
 
-✂️ # 2. Extracción, División y Unión
+## ✂️ 2. Extracción, División y Unión
 ### substr($str, $start, $length = null): Extrae una parte de la cadena.
     echo substr("Hola mundo", 0, 4); // "Hola"
 
@@ -39,7 +39,7 @@
 ### str_split($str, $length = 1): Convierte una cadena en una matriz de caracteres (o bloques).
     print_r(str_split("hola")); // ['h','o','l','a']
 
-🔁  # 3. Reemplazo y modificación
+## 🔁 3. Reemplazo y modificación
 ### str_replace($search, $replace, $subject): Reemplaza todas las apariciones de una subcadena.
     echo str_replace("mundo", "PHP", "Hola mundo"); // "Hola PHP"
     
@@ -48,12 +48,12 @@
 ### trim($str), , : Eliminan espacios (u otros caracteres) al inicio, final o ambos lados.ltrim($str)rtrim($str)
     echo trim("  Hola  "); // "Hola"
 
-📏  # 4. Comparación y búsqueda
+## 📏 4. Comparación y búsqueda
 ### strcasecmp($str1, $str2): Compara dos cadenas insensibles a mayúsculas .
 ### strcmp($str1, $str2): Compara dos cadenas (sensible a mayúsculas).
 ### strncmp($str1, $str2, $len): Compara los primeros n caracteres.
 
-🧼  # 5. Transformación de caso
+## 🧼 5. Transformación de caso
 ### strtolower($str):Convierte a minúsculas.
 ### strtoupper($str):Convierte a mayúsculas.
 ### ucfirst($str): Convierte la primera letra en mayúscula.
@@ -61,7 +61,7 @@
  ###  ucwords($str): Convierte la primera letra de cada palabra en mayúscula.
 
 
-🔍  # 6.  Funciones con expresiones regulares (potentes, pero más lentas)
+## 🔍 6.  Funciones con expresiones regulares (potentes, pero más lentas)
 Estos utilizan el motor PCRE ( Perl Compatible Regular Expressions ) y son ideales para patrones complejos.
 ### 📌preg_match($pattern, $subject, &$matches = null)  Busca la primera coincidencia de un patrón en una cadena.
     if (preg_match("/\d{3}-\d{2}-\d{4}/", "Mi SSN es 123-45-6789", $coincidencias))
