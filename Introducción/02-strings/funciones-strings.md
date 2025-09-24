@@ -1,5 +1,5 @@
 ✅  ##    1. Funciones básicas de cadena (rápidas y simples)
-#  php  strlen()– longitud de la cadena
+###  php  strlen()– longitud de la cadena
 #  php  strpos(), – posición de subcadena strrpos()
 #  php  substr()– extraer parte de la cadena
 #  php  str_replace()/ – reemplazo simple str_ireplace()
