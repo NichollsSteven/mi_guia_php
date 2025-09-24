@@ -1,4 +1,4 @@
-# ✅ 1. Introduccion a las Funciones básicas de cadena (rápidas y simples)
+# ✅ 1. Introduccion a las Funciones básicas de cadenas o strings
 ### strlen()
     - longitud de la cadena
 ### strpos() - strrpos()
