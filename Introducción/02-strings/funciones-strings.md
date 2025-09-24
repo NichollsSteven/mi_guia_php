@@ -1,23 +1,23 @@
 ✅  #    1. Funciones básicas de cadena (rápidas y simples)
-###  php  strlen()– longitud de la cadena
-#  php  strpos(), – posición de subcadena strrpos()
-#  php  substr()– extraer parte de la cadena
-#  php  str_replace()/ – reemplazo simple str_ireplace()
-#  php  trim(), , – eliminar espacios ltrim() rtrim()
-#  php  strtolower(), , , – cambiar mayúsculas/minúsculas strtoupper()ucfirst()ucwords()
-#  php  explode()/ – dividir y unir cadenas implode()
-#  php  str_repeat()– repetir una cadena
-#  php  str_contains(), , (PHP 8+)  str_starts_with()  str_ends_with()
+### strlen()– longitud de la cadena
+### strpos(), – posición de subcadena strrpos()
+### substr()– extraer parte de la cadena
+### str_replace()/ – reemplazo simple str_ireplace()
+### trim(), , – eliminar espacios ltrim() rtrim()
+### strtolower(), , , – cambiar mayúsculas/minúsculas strtoupper()ucfirst()ucwords()
+### explode()/ – dividir y unir cadenas implode()
+### str_repeat()– repetir una cadena
+### str_contains(), , (PHP 8+)  str_starts_with()  str_ends_with()
 
 
 🔤    ## 1. Longitud y posición
-#  php strlen($str): Devuelve la longitud de una cadena.
+###    strlen($str): Devuelve la longitud de una cadena.
     echo strlen("Hola"); // 4
 
-#  php strpos($haystack, $needle): Encuentra la posición de la primera aparición de una subcadena.
+###    strpos($haystack, $needle): Encuentra la posición de la primera aparición de una subcadena.
     echo strpos("Hola mundo", "mundo"); // 5
 
-#  php strrpos($haystack, $needle): Encuentra la posición de la última aparición de una subcadena.
+### strrpos($haystack, $needle): Encuentra la posición de la última aparición de una subcadena.
     echo strrpos("hola hola", "hola"); // 5
 
 ✂️  ## 2. Extracción, División y Unión
