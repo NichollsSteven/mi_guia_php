@@ -11,8 +11,8 @@
 
 
 🔤    # 1. Longitud y posición
-###  strlen($str): Devuelve la longitud de una cadena.
-    echo strlen("Hola"); // 4
+ strlen($str): Devuelve la longitud de una cadena.
+ echo strlen("Hola"); // 4
 
 ###  strpos($haystack, $needle): Encuentra la posición de la primera aparición de una subcadena.
     echo strpos("Hola mundo", "mundo"); // 5
