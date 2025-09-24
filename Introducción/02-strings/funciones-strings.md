@@ -17,7 +17,7 @@
     - repetir una cadena
 ### str_contains() - str_starts_with() - str_ends_with()
 
-#Explicacion a fondo de las Fúnciones
+## Explicacion a fondo de las Fúnciones
 # 🔤 1. Longitud y posición
  ### strlen($str): Devuelve la longitud de una cadena.
     echo strlen("Hola"); // 4
