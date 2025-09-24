@@ -1,2 +1,3 @@
-# mi_guia_php
-Mi guía de estudio de PHP
+# Mi guia de estudio de PHP.
+Guia para repasar todo lo que voy aprendiendo de PHP
+## Contenido
