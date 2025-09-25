@@ -39,15 +39,14 @@
 
 ###  3. 🔍 Métodos para la Recuperación de Resultados
     PDOStatement::fetch($fetch_style)
-    
     Función : Recuperar una sola fila del resultado de una consulta.
     Ejemplo: 
         $stmt = $pdo->query("SELECT nombre, email FROM usuarios LIMIT 1");
         $fila = $stmt->fetch(PDO::FETCH_ASSOC);
         echo $fila['nombre'];
+
         
     PDOStatement::fetchAll($fetch_style).
-    
     Función : Recupera todas las filas del resultado como un array.
     Ideal para mostrar listados completos.
     Ejemplo :
