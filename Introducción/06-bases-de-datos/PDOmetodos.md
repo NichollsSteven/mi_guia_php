@@ -70,7 +70,10 @@
     Es el objeto que representa una consulta SQL en PDO que ya ha sido ejecutada por Metodo 
     query() o preparada por el Metodo prepare():
 
-    Si se ha usado el metodo prepare() Permite:
+    Si se ha usado el metodo prepare(): Permite Ejecutarlo, vicular parametros, Conocer su
+    estado y Obtener resultados; si se usa query no puede Ejecutar y Vincular Parametros
+    pero si el resto.
+    
     Ejecutarla por medio del metodo principal execute()
     
     Vincular valores a los parámetros de la consulta:
