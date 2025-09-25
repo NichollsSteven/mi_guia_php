@@ -65,11 +65,10 @@
     $stmt->fetchColumn($index);  // Devuelve un solo valor de la primera fila, columna $index
     $stmt->fetchObject($class);  // Devuelve un objeto de clase especificada
     
-### 📌 ¿Qué es ?PDOStatement
-    Es el objeto que representa una consulta SQL en PDO que se obtiene por el Metodo ->query() o cuando se prepara una consulta por el Metodo ->prepare(). Permite:
+### 📌 ¿Qué es PDOStatement ?
+    Es el objeto que representa una consulta SQL en PDO que ya ha sido ejecutada por Metodo ->query() o preparada por el Metodo ->prepare() Permite:
 
     Ejecutar la consulta por medio del metodo principal execute()
-    
     Vincular valores a los parámetros de la consulta cuando se usa prepare formas:
         a) Directamente en execute()
             $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
