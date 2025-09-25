@@ -11,7 +11,7 @@
 ### Construcción de la cadena DSN (Data Source Name o Nombre de la fuente de datos):
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
     
-### ⚙️ Opciones de configuración DOP:
+### ⚙️ Opciones de configuración PDO:
     $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // Lanza excepciones en caso de error
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // Devuelve resultados como arrays asociativos
