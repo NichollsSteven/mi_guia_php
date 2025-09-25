@@ -34,7 +34,8 @@
         $stmt = $pdo->prepare("INSERT INTO usuarios (nombre, email) VALUES (?, ?)");
         $stmt->execute(['Ana', 'ana@example.com']);
 
-    ✅ Nota importante: Cuando se reciba datos del usuario por medio de (formularios, URL, etc.)  Siempre usar prepare() + execute() para evitar inyecciones SQL.
+    ✅ Nota importante: Cuando se reciba datos del usuario por medio de (formularios, URL, etc.)
+    Siempre usar prepare() + execute() para evitar inyecciones SQL.
 
 ###  3. 🔍 Métodos para la Recuperación de Resultados
     PDOStatement::fetch($fetch_style)
@@ -66,10 +67,13 @@
     $stmt->fetchObject($class);  // Devuelve un objeto de clase especificada
     
 ### 📌 ¿Qué es PDOStatement ?
-    Es el objeto que representa una consulta SQL en PDO que ya ha sido ejecutada por Metodo ->query() o preparada por el Metodo ->prepare() Permite:
+    Es el objeto que representa una consulta SQL en PDO que ya ha sido ejecutada por Metodo 
+    query() o preparada por el Metodo prepare():
 
-    Ejecutar la consulta por medio del metodo principal execute()
-    Vincular valores a los parámetros de la consulta cuando se usa prepare formas:
+    Si se ha usado el metodo prepare() Permite:
+    Ejecutarla por medio del metodo principal execute()
+    
+    Vincular valores a los parámetros de la consulta:
         a) Directamente en execute()
             $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
             $stmt->execute(['juan@example.com']);
@@ -79,11 +83,16 @@
             $stmt->bindValue(1, 'juan@example.com');
             $stmt->execute();
             
-        c) ConbindParam()
+        c) Con bindParam()
             $email = 'juan@example.com';
             $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
             $stmt->bindParam(1, $email);
             $stmt->execute();
+
+        d) Con Placeholder
+            $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email");
+            $param=[':email' => "juan@example.com"]
+            $stmt->execute($param) o tambien stmt->execute([':email' => "juan@example.com"]);
   
     Obtener resultados por medio de los metodos:
         a) fecth($style): // Recupera una fila de los resultados Obtenidos de la consulta SQL
@@ -94,7 +103,6 @@
         
         d) fetchObject(): // // Devuelve un objeto de clase especificada
         
-    
     Conocer su estado: Por medio de los metodos:
          a) rowCount(): Número de filas afectadas (útil en ACTUALIZAR/BORRAR/INSERTAR).
         
@@ -104,7 +112,9 @@
         
         d) errorInfo(): Información detallada del error (array con código, driver, mensaje)
 
-    ✅ Consejo final : Usar siempre prepare() + execute() para consultas dinámicas y para consultas estáticas sin parámetros query(). Nunca se debe concatenar variables directamente en SQL.
+    ✅ Consejo final : Usar siempre prepare() + execute() para consultas dinámicas
+        y para consultas estáticas sin parámetros query(). Nunca se debe concatenar
+        variables directamente en SQL.
 
 
 
