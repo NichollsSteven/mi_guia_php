@@ -3,33 +3,31 @@
 
 ### 1. ⚙️ Métodos de Consulta
     PDO::query($sql
-    
-    Función : Ejecuta directamente una consulta SQL y devuelve un objeto .PDOStatement
+    Función : Ejecuta directamente una consulta SQL y devuelve un objeto PDOStatement
     Uso típico : Para consultas simples que devuelven resultados (SELECT).
     Ejemplo: 
         $stmt = $pdo->query("SELECT * FROM usuarios");
 
+
     PDO::prepare($sql)
-    
     Función : Preparar una consulta SQL para ser ejecutada posteriormente.
-    Devuelve : Un objeto listo para vincular parámetros y ejecutar.PDOStatement
+    Devuelve Un objeto PDOStatement: Listo para vincular parámetros y ejecutar.
     Ventaja : Seguridad contra inyección SQL cuando se usan parámetros.
     Ejemplo: 
         $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE id = ?");
 
 ### 2. ▶️ Métodos de Ejecución
     PDO::exec($sql).
-    
     Función : Ejecuta una consulta SQL que no devuelve resultados .
     Devuelve : El número de filas afectadas (por ejemplo, en INSERT, UPDATE, DELETE).
-    No devuelve un objeto PDOStatement, por lo tanto, no puedes recuperar datos con fetch().
+    No devuelve un objeto PDOStatement, por lo tanto, no se pueden recuperar datos con fetch().
     Ejemplo: 
         $filasAfectadas = $pdo->exec("DELETE FROM usuarios WHERE activo = 0"); 
         echo "Filas eliminadas: " . $filasAfectadas;
+        
 
     PDOStatement::execute([$params]).
-    
-    Función : Ejecuta una consulta preparada ( ).prepare()
+    Función : Ejecuta una consulta preparada por medio el metodo prepare()
     Puede recibir una matriz con los valores de los parámetros.
     Es el método principal para ejecutar consultas preparadas.
     Ejemplo:
