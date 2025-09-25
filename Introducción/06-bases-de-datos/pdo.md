@@ -28,20 +28,21 @@
  * Descripción: Establece una conexión segura a una base de datos MySQL usando PDO.
  * Autor: Tu nombre o equipo
  * Fecha: 2025
-   
+
         // Parámetros de conexión a la base de datos
         $host = 'localhost';  // Servidor de la base de datos (generalmente 'localhost')
         $db   = 'nombre_bd';  // Nombre de la base de datos
         $user = 'usuario';    // Usuario de la base de datos
         $pass = 'contraseña'; // Contraseña del usuario
        $charset = 'utf8mb4'; // Juego de caracteres (recomendado para soporte completo de UTF-8)
+   
        $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-       $options =
-       [
-            PDO::ATTR_ERRMODE  => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES   => false
-       ];
+   
+       $options =[
+                PDO::ATTR_ERRMODE  => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES   => false
+               ];
 
         try {
             // Crear una nueva instancia de PDO
