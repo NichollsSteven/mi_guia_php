@@ -1,2 +1,2 @@
-# Mi guia de estudio de PHP.
-Guia para repasar todo lo que voy aprendiendo de PHP
+# Mi guia de estudio y Recursos
+Guia para repasar todo lo que voy aprendiendo
