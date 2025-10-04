@@ -105,6 +105,37 @@ la base de datos: bases de datos, tablas, índices, etc.
 
 #### 🔗 Formas de definir una clave foránea
     (Ya cubiertas: con nombres explícitos y implícitos)
+#### 🔒 Restricciones al definir campos
+    Ejemplo - 7 AUTO_INCREMENT: Genera automáticamente un entero único para cada nuevo registro
+    (en MySQL).Solo se usa en columnas numéricas enteras, generalmente junto con PRIMARY KEY.
+    (sql)Nombre_campo INT AUTO_INCREMENT PRIMARY KEY
+    
+    Ejemplo - 8 ENUM: Define un conjunto limitado y fijo de valores posibles para un campo.
+    (sql) Nombre_campo ENUM('Valor1', 'Valor2', 'Valor3')
+    Ejemplo:estado ENUM('activo', 'inactivo', 'pendiente')
+    
+    Ejemplo - 9 ON DELETE / ON UPDATE (en claves foráneas): Define el comportamiento
+    automático cuando se elimina o actualiza el registro referenciado en la tabla padre.
+    Ejemplo:
+    (sql)FOREIGN KEY (Nombre_campo) 
+    REFERENCES Nombre_Tabla (Campo_Primary_Key) 
+    ON DELETE CASCADE 
+    ON UPDATE CASCADE
+    Opciones comunes:
+    ON DELETE CASCADE → elimina los registros hijos al borrar el padre.
+    ON DELETE SET NULL → establece el campo foráneo en NULL.
+    ON DELETE RESTRICT → impide la eliminación si existen registros hijos.
+    ON UPDATE CASCADE → actualiza automáticamente los valores hijos si cambia la clave primaria del padre.
+    
+    Ejemplo - 10 TIMESTAMP con valor predeterminado: Registra automáticamente la
+    fecha y hora de creación o actualización de un registro.
+    (sql) Nombre_campo TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    Ejemplo para actualización automática:
+    updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
+    
+#### ✅ Estas restricciones complementan el diseño robusto de tablas en SQL,
+asegurando integridad referencial, consistencia de datos y comportamiento
+automático donde sea necesario
     
     
     
