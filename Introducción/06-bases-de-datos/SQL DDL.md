@@ -2,8 +2,8 @@
 ## 🛠️ Principales comandos DDL
 * CREATE
 * ALTER
-*  DROP
-*   TRUNCATE)
+* DROP
+* TRUNCATE
 ## 🔍 ¿Qué son los comandos DDL?
     Son un conjunto de instrucciones SQL utilizadas
     para definir y modificar la estructura de la base de datos y sus objetos,     como tablas,índices y esquemas.
