@@ -12,37 +12,38 @@
 * JOIN.
 
 ## 🔍 ¿Qué son los comandos DML?
-    Son un conjunto de instrucciones SQL utilizadas para manipular y gestionar los datos dentro de la base de datos.  
-    No modifican la estructura de las tablas, sino su contenido: insertar, actualizar, eliminar o recuperar registros.
+    Son un conjunto de instrucciones SQL utilizadas para manipular y gestionar
+    los datos dentro de la base de datos.No modifican la estructura de las tablas,
+    sino su contenido: insertar, actualizar, eliminar o recuperar registros.
 
 ## 🛠️ Principales comandos DML
 
 ### 1. SELECT
-    > Se utiliza para recuperar datos de una o más tablas. Permite especificar qué columnas y filas se desean obtener.
+    > Se utiliza para recuperar datos de una o más tablas. Permite especificar
+    qué columnas y filas se desean obtener.
 
 #### ✅ Sintaxis básica:
     SELECT [columnas] FROM Nombre_Tabla [WHERE condición] [ORDER BY columna (ASC|DESC)] [LIMIT número];
 
 #### ➤ SELECT: Especifica las columnas que se desean recuperar.  
-    Puedes usar  para seleccionar todas las columnas.
-    (sql)SELECT  FROM empleados;
+    Puedes usar para seleccionar todas las columnas.
+    SELECT  FROM empleados;
 
 #### ➤ FROM: Indica la tabla de la cual se extraerán los datos.
-    (sql) FROM empleados;
+     FROM empleados;
 
 
 #### ➤ WHERE (opcional): Filtra los registros que cumplen con una condición específica.
-    (sql) WHERE salario > 50000;
+    WHERE salario > 50000;
 
-#### ➤ ORDER BY (opcional): Ordena los resultados en base a una o más columnas, en orden ascendente (ASC) o descendente (DESC).
-    (sql) ORDER BY nombre ASC;
+#### ➤ ORDER BY (opcional): Ordena los resultados en base a una o más columnas,en orden ascendente (ASC) o descendente (DESC).
+    ORDER BY nombre ASC;
 
 
 #### ➤ LIMIT (opcional): Limita el número de registros devueltos por la consulta.
-    (sql) LIMIT 10;
+    LIMIT 10;
 
-### 2. INSERT
-> Permite agregar nuevos registros o filas a una tabla existente.
+### 2. INSERT > Permite agregar nuevos registros o filas a una tabla existente.
 
 #### ✅ Sintaxis básica:
     (sql) INSERT INTO Nombre_Tabla (columna1, columna2, columna3) VALUES ('valor1', 'valor2', 'valor3');
